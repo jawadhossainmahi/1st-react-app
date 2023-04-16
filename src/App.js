@@ -77,6 +77,7 @@ function App() {
         <div className="contianer my-3">
         {/* <RouterProvider router={router}></RouterProvider> */}
         <Textform showAlert={showAlert} heading="Enter the text to analize" mode={mode} /> 
+            
         </div >
    
 
