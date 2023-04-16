@@ -5,10 +5,10 @@ import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import Alert from './components/Alert';
 import About from './components/About';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+// import {
+//   createBrowserRouter,
+//   RouterProvider,
+// } from "react-router-dom";
 
 
 function App() {
@@ -53,22 +53,20 @@ function App() {
     }
   }
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element:    <Textform showAlert={showAlert} heading="Enter the text to analize" mode={mode} /> ,
-    },
-    {
-      path: "/home",
-      element:    <Textform showAlert={showAlert} heading="Enter the text to analize" mode={mode} /> ,
-    },
-    {
-      path: "/about",
-      children[
-      { index: true, element:    <About /> },
-      ],
-    },
-  ]);
+  // const router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element:    <Textform showAlert={showAlert} heading="Enter the text to analize" mode={mode} /> ,
+  //   },
+  //   {
+  //     path: "/home",
+  //     element:  <Textform showAlert={showAlert} heading="Enter the text to analize" mode={mode} /> ,
+  //   },
+  //   {
+  //     path: "/about",
+  //     element: <About/>
+  //   },
+  // ]);
 
   return (
     <>
@@ -77,9 +75,8 @@ function App() {
         <Navbar title="textDOne" about='About Us' mode={mode} toggleMode={toggleMode} toggleGreenMode={toggleGreenMode} />
         <Alert alert={alert} />
         <div className="contianer my-3">
-        <RouterProvider router={router}></RouterProvider>
-         
-            
+        {/* <RouterProvider router={router}></RouterProvider> */}
+        <Textform showAlert={showAlert} heading="Enter the text to analize" mode={mode} /> 
         </div >
    
 

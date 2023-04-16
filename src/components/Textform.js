@@ -18,7 +18,7 @@ export default function Textform(props) {
     }
     const [text, setText] = useState('');
     let x
-    if (text.length == 0) {
+    if (text.length === 0) {
         x = 0
     }
     else {
